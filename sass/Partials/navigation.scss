@@ -1,0 +1,9 @@
+//
+@import "compass";
+
+.nav_buttons{
+  @include flexbox((
+    display: flex,
+    flex-direction: row
+  ));
+}

@@ -1,0 +1,13 @@
+/* line 4, ../sass/Partials/navigation.scss */
+.nav_buttons {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 8, ../sass/Partials/base.scss */
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
