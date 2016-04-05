@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300italic);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+/* line 12, ../sass/Partials/nav_menu.sass */
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* line 16, ../sass/Partials/nav_menu.sass */
+.head-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* line 20, ../sass/Partials/nav_menu.sass */
+.main_nav {
+  height: 4em;
+  background-color: #EF6C00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/* line 31, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list {
+  align-items: center;
+  top: 50%;
+  font-size: 1.3em;
+  height: 100%;
+  margin: 0;
+}
+/* line 37, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list li.nav_link {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 47, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list li.nav_link:hover {
+  background: #bc5500;
+}
+/* line 49, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list li.curent_link {
+  background: #ffbe89;
+}
+/* line 51, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list li.curent_link:after {
+  position: absolute;
+  content: "";
+  width: 1em;
+  height: 1em;
+  top: 2.5em;
+  left: 50%;
+  background: #ffbe89;
+  transform: translateX(-50%) rotate(45deg);
+}
+/* line 60, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list li.curent_link:hover {
+  background: #ff8623;
+}
+/* line 62, ../sass/Partials/nav_menu.sass */
+ul.main_nav_list li.curent_link:hover:after {
+  background: #ff8623;
+}
+
+/* line 68, ../sass/Partials/nav_menu.sass */
+.sub_nav {
+  background: #111;
+  color: white;
+  height: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+/* line 76, ../sass/Partials/nav_menu.sass */
+.sub_nav ul.sub_nav_list {
+  margin: 0;
+  height: 100%;
+}
+/* line 79, ../sass/Partials/nav_menu.sass */
+.sub_nav ul.sub_nav_list li.nav_link {
+  height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* line 88, ../sass/Partials/nav_menu.sass */
+.sub_nav ul.sub_nav_list li.nav_link:hover {
+  background-color: #373737;
+}
+
+/* line 8, ../sass/Partials/content.sass */
+.content {
+  max-width: 140em;
+  box-sizing: border-box;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: #FFF59D;
+  height: 100%;
+}
+/* line 16, ../sass/Partials/content.sass */
+.content h1, .content h2 {
+  font-family: "Droid Sans", sans-serif;
+}
+/* line 18, ../sass/Partials/content.sass */
+.content p {
+  font-family: "Slabo 27px", serif;
+}
+
+/* line 4, ../sass/style_new.sass */
+html {
+  height: 100%;
+}
+
+/* line 7, ../sass/style_new.sass */
+body {
+  margin: 0;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* line 16, ../sass/style_new.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/style_new.sass */
+.content {
+  margin-top: 7em;
+}

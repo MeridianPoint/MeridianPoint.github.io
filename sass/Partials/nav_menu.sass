@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Lato)
+@import url(https://fonts.googleapis.com/css?family=Raleway:300italic)
+
+$main_nav_height: 4em
+$nav-bar-color: #EF6C00
+$after_square_size: 1em
+
+$sub_nav-color: #111
+$sub_nav_height: 3em
+//general
+
+ul
+  list-style-type: none
+  display: flex
+
+.head-nav
+  position: fixed
+  width: 100%
+  top: 0
+.main_nav
+
+  height: $main_nav_height
+  background-color: $nav-bar-color
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  font-family: 'Lato', sans-serif
+  color: white
+//main nav
+ul.main_nav_list
+  align-items: center
+  top: 50%
+  font-size: 1.3em
+  height: 100%
+  margin: 0
+  li.nav_link
+    position: relative
+    height: 100%
+    box-sizing: border-box
+    padding-left: 1em
+    padding-right: 1em
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &:hover
+      background: darken( $nav-bar-color, 10% )
+  li.curent_link
+    background: lighten($nav-bar-color, 30% )
+    &:after
+      position: absolute
+      content: ""
+      width: $after_square_size
+      height: $after_square_size
+      top: $main_nav_height - 3 * $after_square_size / 2
+      left: 50%
+      background: lighten($nav-bar-color, 30% )
+      transform: translateX(-50%) rotate(45deg)
+    &:hover
+      background: lighten($nav-bar-color, 10% )
+      &:after
+        background: lighten($nav-bar-color, 10% )
+//hover
+//
+//main nav list
+
+.sub_nav
+  background: $sub_nav-color
+  color: white
+  height: $sub_nav_height
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-family: 'Raleway', sans-serif
+  ul.sub_nav_list
+    margin: 0
+    height: 100%
+    li.nav_link
+      height: 100%
+      padding-left: 1em
+      padding-right: 1em
+      font-size: 1.2em
+      display: flex
+      flex-direction: column
+      //align-items: center
+      justify-content: center
+      &:hover
+        background-color: lighten($sub_nav-color, 15%)

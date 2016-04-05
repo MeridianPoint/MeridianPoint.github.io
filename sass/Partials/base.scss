@@ -1,7 +1,10 @@
 //variables
 @import "navigation";
 
-
+$content-width: 60em;
+$content-height: 40em;
+$content-border-radius: 0.4em;
+$content-border-color: black;
 
 //basic 
 ul{
@@ -9,4 +12,19 @@ ul{
     list-style: none;
     list-style-type: none;
   }
+}
+
+
+.content{
+  //display: none;
+  width: $content-width;
+  height: $content-height;
+  border-radius: $content-border-radius;
+  border: 3px solid $content-border-color;
+  margin: 0 auto;
+
+  padding: 3em;
+}
+.active_content{
+  display: block;
 }

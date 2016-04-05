@@ -6,8 +6,23 @@
   flex-direction: row;
 }
 
-/* line 8, ../sass/Partials/base.scss */
+/* line 11, ../sass/Partials/base.scss */
 ul li {
   list-style: none;
   list-style-type: none;
+}
+
+/* line 18, ../sass/Partials/base.scss */
+.content {
+  width: 60em;
+  height: 40em;
+  border-radius: 0.4em;
+  border: 3px solid black;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+/* line 28, ../sass/Partials/base.scss */
+.active_content {
+  display: block;
 }

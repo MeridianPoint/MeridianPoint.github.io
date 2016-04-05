@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>WQS's Personal Page</title>
+	<meta content="text/html; charset=UTF-8">
+	<!-- external css-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- internal css -->
+	<link href="stylesheets/style.css" rel="stylesheet">
+	<!--  end of internal css-->
+	<!-- external js-->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1 id="head_up">Qiushuo Wang's Personal Site</h1>
+	<!--navigation bar-->
+	<div class="nav_bar navbar navbar-default">
+        <div class="container">
+            <ul class="nav_buttons nav navbar-nav container">
+                <li class="nav_button active"><a class="mainnavlink" href="Home">Home</a></li>
+                <li class="nav_button"><a class="mainnavlink" href="About">About Me</a></li>
+                <li class="nav_button"><a class="mainnavlink drop_down_enable" href="Samples">Work Samples</a></li>
+                <li class="nav_button"><a class="mainnavlink" href="timeline">My TimeLine</a></li>
+                <li class="nav_button"><a class="mainnavlink" href="Blog">Blog Post</a></li>
+                <li class="nav_button"><a class="mainnavlink" href="Contact">Contact Me</a></li>
+            </ul>
+    </div>
+	</div>
+    <ul class="sample_types dropdown">
+        <li class="sample_type">Coding</li>
+        <li class="sample_type">Digital Art</li>
+        <li class="sample_type">Traditonal Art</li>
+        <li class="sample_type">Multimedia Art</li>
+    </ul>
+	<!--end of navigation bar-->
+	
+	<!--content-->
+	<div class="content active_content" id="Home">
+		<p>I am Qiushuo Wang, A graduate student of computer science in George Washington University<br>
+            C++ Programmer, Web developer,<br>
+            Armateur digital artist
+        </p>
+	</div>
+	<div class="content" id="About_me">
+		<div class="basic">
+            <img class="portrait"/>
+		</div>
+		<div class="skills">
+            <h2>Skills</h2>
+			<div class="dev">
+                <h3>Development Skills:</h3>
+                <p>C++, HTML, Javascript, CSS, OpenGL, JAVA</p>
+                <h3>Develop knowledge</h3>I
+                <p>Computer Graphics, Data structure & algorithm, version control(git), database, HCI principles</p>
+            </div>
+            <div class="artistic_skills">
+                <h3>Artistic Skills:</h3>
+                <p>sketching, sculpturing, multi-media,Photoshop picture, 3d modeling, digital sculpture</p>
+            </div>
+		</div>
+        <div class="software">
+            <h2>Software Mastery</h2>
+            <div class="officing">
+                <h3></h3>
+            </div>
+            <div class="artistic">
+                <h3>Artistic</h3>
+                <p>Photoshop, 3ds MAX, MudBox, Sculptrise, Inkscape</p>
+            </div>
+
+            <div class="ide">
+                <h3>IDE</h3>
+                <p>Visial Studio 2013, Ecvlipse, Qt Creator 5, Nodepad ++, Aptana Studio 3</p>
+            </div>
+        </div>
+        <div class="Education">
+            <h2>Education Experience</h2>
+            <!-- TODO education experience-->
+        </div>
+	</div>
+	<div class="content sample" id="Coding_sample">
+        <h2>Code sample</h2>
+        <a href="https://github.com/MeridianPoint">Github projects</a>
+        <div class="graphic">
+            <h2>Computer Graphic output</h2>
+                <h3>images:</h3>
+                <h3>video</h3>
+        </div>
+        <div class=front-end">Ui & Front end development:</div>
+    </div>
+	<div class="content sample" id="Digital_art_sample">
+        <div digi-art-showcase></div>
+    </div>
+    <div class="content sample" id="Onsite_frontend_sample"></div>
+	<div class="content sample" id="Traditional_art_sample">
+        <div class="skteching">
+            <h2>Sketching</h2>
+        </div>
+    </div>
+	<div class="content sample" id="Multimedia_art_sample"></div>
+	<div class="content" id="Blog">
+        <div class="timeline"></div>
+    </div>
+	<!--end of content-->
+</body>
+</html>
