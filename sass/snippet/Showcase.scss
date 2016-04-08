@@ -6,23 +6,19 @@ body{
   align-items: center;
 }
 
-.content{
-  box-sizing: border-box;
-  max-width: $content-width;
-
-  .projects{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .projects{
+  display: flex;
+  flex-direction: column;
   .project{
     h1{
 
     }
     h2{
 
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
     }
   }
 }
